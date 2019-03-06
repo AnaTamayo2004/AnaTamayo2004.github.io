@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+}
+
+.header{
+	background-color: #48d2ba;
+    font-family: "Homer Simpson", cursive;
+	text-align: center;
+	padding: 30px;
+}
+.header h1{
+	color: white;
+	font-size: 60px;
+}
+.menu{
+	background-color: black;
+	overflow: hidden;
+}
+.menu a {
+	float: left;
+	display: block;
+	color: #48d2ba ;
+	text-align: center;
+	padding:16px;
+}
+.menu a:hover{
+	color: black;
+	background-color: white;
+
+}
+.izquierda{
+	float: left;
+	width: 70%;
+}
+.item{
+	background-color: white;
+	width: 100%;
+   padding: 20px; 
+}
+.imagen{
+	width: 500px;
+}
+.item{
+    background-color: white;
+	width: 100%;
+    padding: 20px; 
+}
+body{
+	background-color: #e5e5e5;
+}
+.derecha{
+	float: left;
+	width: 30%;
+	background-color: white;
+	padding-left: 20px;
+}
+.contenido: after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.footer{
+	padding: 20px;
+	text-align: center;
+	background-color: #f5f5dc;
+	margin-top: 1000px;
+}
