@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>Proyecto Parcial 2</title>
+	<title>Proyecto parcial 2</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,11 +30,11 @@
     ga('create','UA-41451351-1');ga('send','pageview');
 </script></head>
 <body>
-<div id="all-wrap">
 	<div class="background-t background"></div>
 	<div class="background-e background"></div>
 	<div class="background-a background"></div>
-	<div class="background-r background"></div> 
+	<div class="background-r background"></div>
+
 	<div id="wrap">
 		<header>
 	<div class="header-wrap">
@@ -134,7 +134,7 @@
 	$(document).ready(function(){ 
 		$(".gnb ul li a").addClass(function(index, currentClass) {
 		    var addedClass;
-		    if ( currentClass === "") {
+		    if ( currentClass === "video") {
 		      addedClass = "active";
 		    }
 		    return addedClass;
@@ -159,11 +159,21 @@
 		<section id="content">
 			<div class="photo-wrapper video-wrap">
 				<div class="movie-container">
-					<iframe width="820" height="462" src="images/y2mate.com - bts_fake_love_official_mv_extended_ver_D_6QmL6rExk_1080p.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="movie"></iframe>
+					<iframe width="820" height="462" src="images/y2mate.com - bts_fake_love_official_mv_7C2z4GqqS5E_1080p.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="movie"></iframe>
 				</div><!-- //movie-container -->
-				
-			</div><!-- //photo-wrapper -->
 
+				<ul class="vid-select cf">
+	<li><a href="comebacktrailer.php"><img src="images/comebacktrailer.png"></a></li>
+	<li><a href="mvteaser-1.php"><img src="images/mv-teaser1.png"></a></li>
+	<li><a href="mvteaser-2.php"><img src="images/mv-teaser2.png"></a></li>
+	<li><a href="fakelove.php"><img src="images/fakelove.png"></a></li>
+	<li><a href="video.php"><img src="images/mv-extendedver.png"></a></li>
+</ul>				<script>
+				$(document).ready(function(){
+					$(".vid-select li").eq(3).find("a").addClass("active");
+				})
+				</script>
+			</div><!-- //photo-wrapper -->
 		</section><!-- //content -->
 		
 <footer>     <div class="inner">         <ul class="sns cf">
@@ -179,9 +189,8 @@ href="http://company.ibighit.com/schedule/?page_id=37" target="_blank"><img
 src="images/footer/schedule.png"></a></li>         </ul>         <img
 src="images/logo_bts.png" alt="bts logo" class="logo_bts">         <p
 class="copyright">Copyright © 2018 Big Hit Entertainment All Rights
-Reserved Ana Chida</p>     </div> </footer>
+Reserved</p>     </div> </footer>
 	</div><!-- //wrap -->
-</div><!-- //all-wrap -->
+
 </body>
 </html>
-
